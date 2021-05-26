@@ -1,1 +1,1 @@
-[Story timeline](https://github.com/David-Roark/freeCodeCamp-projects/tribute-page/page.html)
+[Story timeline]( https://david-roark.github.io/freeCodeCamp-projects/tribute-page/page.html)
