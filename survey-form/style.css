@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+* {
+  --blue: #012690;
+  --navy: #8af5e5;
+  --white: #EEE;
+  --orange: #F60;
+  --dark: #111;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Kaushan Script', cursive, monospace;
+}
+
+body {
+  background: var(--orange);
+  overflow: hidden visible;
+}
+
+h1, h3 {
+  margin: 0;
+  padding: 1rem 0;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: rgba(17, 17, 17, 0.5);
+  padding: 50px 0;
+  color: var(--white);
+  border-radius: 5px;
+}
+#title {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+#description {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  color: var(--dark);
+}
+
+#survey-form:hover {
+  box-shadow: 0 5px 30px grey;
+}
+
+#survey-form > div {
+  margin-bottom: 10px;
+}
+
+#survey-form > div > label, #survey-form > div > input {
+  display: block;
+  width: 100%;
+}
+
+#survey-form > div > label {
+  font-weight: bold;
+}
+
+#comments {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#comments:hover {
+  box-shadow: 1px 5px 10px grey;
+}
+
+#submit {
+  border: none;
+  background-color: var(--orange);
+  border-radius: 5px;
+  padding: 10px;
+}
+#submit:hover {
+  opacity: 0.8;
+}
+
+#square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: var(--blue);
+  z-index: -1;
+  opacity: 0.8;
+  animation: 3s linear 1s infinite alternate anisquare;
+
+}
+
+
+
+#circle {
+  position: absolute;
+  top: -50%;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background-color: var(--navy);
+  z-index: -1;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: 3s linear 1s infinite alternate anicircle;
+}
+
+@keyframes anisquare {
+  from {
+    transform: scale(1, 1) translate(-90%, -50%) rotate(3turn);
+    opacity: 0.9;
+  }
+  to   {
+    transform: scale(3, 3);
+    opacity: 0.25;
+  }
+}
+@keyframes anicircle {
+  from {
+    transform: scale(1, 1);
+    opacity: 0.1;
+  }
+  to   {
+    transform: scale(3, 3);
+    opacity: 0.85;
+  }
+}

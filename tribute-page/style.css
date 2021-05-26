@@ -1,0 +1,112 @@
+#main, #main * {
+  box-sizing: boder-box;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  --blue: #003366;
+  --gray: #CCCCCC;
+  --yellow: #FFCC00;
+  background-color: var(--gray);
+  color: var(--blue);
+  font-size: 18px;
+  padding: 1rem;
+}
+
+#main h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+}
+
+#main h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+#main a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8em;
+}
+
+#main a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+}
+
+#main header, #main main {
+  margin: 20px 0;
+  padding: 0 0 10px 0;
+}
+
+#title {
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+#img-div {
+  width: 35%;
+  padding: 10px;
+}
+
+#tribute-info {
+  width: 55%;
+  padding: 10px;
+}
+
+#img-div figure {
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#img-div:hover figure {
+ box-shadow: 1px 3px 10px 5px gray;
+}
+#image {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+  max-height: auto;
+}
+
+#img-caption {
+  background-color: var(--yellow);
+  margin: 0;
+  padding: 5px;
+}
+
+#tribute-info p {
+  margin-bottom: 10px;
+  padding: 0 10px 10px 10px;
+  line-height: 1.5em;
+  text-indent: 3ch;
+}
+
+#main h2 {
+  text-align: center;
+}
+
+#main ul {
+  list-style-type: none;
+}
+
+#main li {
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 720px) {
+  #header {
+    flex-direction: column;
+  }
+  #img-div, #tribute-info {
+    width: 100%;
+  }
+}

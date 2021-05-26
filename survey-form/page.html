@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="square"></div>
+    <div id="circle"></div>
+
+    <div class="form">
+        <h1 id="title">Story survey form</h1>
+        <p id="description">
+            Would you like to receive famous's timeline? Subscribe now!
+        </p>
+        <form id="survey-form" action="" method="POST">
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="What is your name?" required>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="What is your email address?" required>
+            </div>
+            <div>
+                <label id="number-label" for="age">Age (Optional)</label>
+                <input id="number" name="age" type="number" min="7" max="100" placeholder="How old are you?">
+            </div>
+            <div>
+                <label id="sexual-label" for="sexual">Sexual</label>
+                <select class="sexual" id="dropdown" name="sexual">
+                    <option value="not-to-say">Preper not to say</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+
+                </select>
+            </div>
+
+            <div>
+                <h3>What subjects do you interested? <i>(Multiple check)</i></h3>
+                <label for="subject-math"><input type="checkbox" id="math" value="math" name="math">Math</label>
+                <label for="subject-teamwork"><input type="checkbox" id="teamwork" value="teamwork" name="teamwork">Teamwork</label>
+                <label for="subject-money"><input type="checkbox" id="money" value="money" name="money">Money</label>
+                <label for="subject-health"><input type="checkbox" id="health" value="health" name="health">Health</label>
+                <label for="subject-social"><input type="checkbox" id="social" value="social" name="social">Social</label>
+                <label for="subject-business"><input type="checkbox" id="business" value="business" name="business">Business</label>
+                <label for="subject-randomly"><input type="checkbox" id="randomly" value="randomly" name="randomly">Randomly</label>
+            </div>
+
+            <div>
+                <h3>How many times a month would you like to receive my email?</h3>
+                <label for="daily"><input type="radio" id="daily" name="receive" value="daily" checked>Daily</label>
+                <label for="weekly"><input type="radio" id="weekly" name="receive" value="weekly">Weekly</label>
+                <label for="two-weeks"><input type="radio" id="two-weeks" name="receive" value="two-weeks">Two weeks</label>
+                <label for="sometimes"><input type="radio" id="sometimes" name="receive" value="sometimes">Sometimes</label>
+            </div>
+
+            <div>
+                <h3 for="comments">Help us improve our service.</h3>
+                <textarea id="comments" name="comments" rows="auto" cols="auto" placeholder="Please, comment any suggestions right here. Thank you so much."></textarea>
+            </div>
+
+            <div>
+                <input id="submit" type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
